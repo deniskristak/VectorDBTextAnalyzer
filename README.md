@@ -1,11 +1,15 @@
+# About
+Search for a particular text / question / concept within your PDF documents using OpenAI's Embeddings
+
 # SETUP
 1. Install python dependencies
 2. Setup Weaviate docker container
-   - instructions can be found [here](https://weaviate.io/developers/weaviate/installation/docker-compose), but the `docker-compose.yml` in this repo should work just fine
+   
 3. Run the Weaviate docker container
-```bash
-docker compose up -d
-```
+   - more detailed instructions are [here](https://weaviate.io/developers/weaviate/installation/docker-compose), but the `docker-compose.yml` in this repo should work just fine
+   ```bash
+   docker compose up -d
+   ```
 4. Place all the source PDFs in the `data_files` directory
 5. Define your `OPENAI_API_KEY` in the `.env` file
 
